@@ -18,7 +18,7 @@ public class Removeelement_page4 extends Base_page
 	}
 	public void Removeproduct()
 	{
-		Visiblityof(7, removeelementfromcart);
+		Visiblityof(10, removeelementfromcart);
 		removeelementfromcart.click();
 		
 	}

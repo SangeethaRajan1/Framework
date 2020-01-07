@@ -14,6 +14,7 @@ public class Clickproduct2_page extends Base_page{
 	}
 	public void Clickonprodimg()
 	{
+		Visiblityof(7, Prodclick);
 		Prodclick.click();
 	}
 

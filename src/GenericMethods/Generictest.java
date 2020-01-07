@@ -38,7 +38,9 @@ public class Generictest implements Auto_constant {
 	@BeforeMethod
 		public void openapp()
 	{
-		System.setProperty(gecko_key,gecko_value);
+		String key=Filemanager.getgeckodriverkey();
+		String value=Filemanager.getgeckodrivervalue();
+		//System.setProperty("webdriver.gecko.driver","./Softwares/geckodriver.exe");
 		 driver=new FirefoxDriver();
 		//driver.get("https://www.flipkart.com");
 		 String url=Filemanager.getapplnurl();

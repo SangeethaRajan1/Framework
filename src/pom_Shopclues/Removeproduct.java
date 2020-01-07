@@ -16,14 +16,25 @@ public class Removeproduct extends Base_page {
 	}
 	public void Clickremove()
 	{
+		Visiblityof(7, remove);
 		remove.click();
 	}
 	public void Clickremoveconfirm()
 	{
+		Visiblityof(7, removeconfirmation);
 		removeconfirmation.click();
 	}
 	public void emptycart()
 	{
 		Visiblityof(5, Emptycart);
+		boolean cart = Emptycart.isDisplayed();
+		if(cart)
+		{
+			System.out.println("Item has been removed");
+		}
+		else
+		{
+			System.out.println("Item has not removed");
+		}
 	}
 }

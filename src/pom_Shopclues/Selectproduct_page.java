@@ -1,5 +1,7 @@
 package pom_Shopclues;
 
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,9 +21,16 @@ public class Selectproduct_page extends Base_page{
 	GMaction g=new GMaction();
 	g.Movetoelement(driver,element1);
 	}
-	public void ClickonSaree()
+	public void ClickonSaree() throws InterruptedException 
 	{
+		Visiblityof(7, element2);
 		element2.click();
+		Set<String> childbr = driver.getWindowHandles();
+		for(String window:childbr)
+		{
+			driver.switchTo().window(window);
+			Thread.sleep(3000);
+		}
 	}
 }
 	

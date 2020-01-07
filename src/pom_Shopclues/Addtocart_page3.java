@@ -17,10 +17,12 @@ public class Addtocart_page3 extends Base_page {
 	}
 	public void Selectcolor()
 	{
+		Visiblityof(7, color);
 		color.click();
 	}
 	public void Addtocart()
 	{
+		elementtobeclickable(7, Addtocart);
 	Addtocart.click();	
 	}
 	public void Viewthecart()
